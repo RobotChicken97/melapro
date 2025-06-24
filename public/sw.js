@@ -1,12 +1,11 @@
-// Service Worker for Offline-First Inventory System
-const CACHE_NAME = 'inventory-system-v1'
-const API_CACHE_NAME = 'inventory-api-v1'
+// Service Worker for Melapro Inventory System
+const CACHE_NAME = 'melapro-v1'
+const API_CACHE_NAME = 'melapro-api-v1'
 
 // Files to cache for offline use
 const STATIC_CACHE_URLS = [
   '/',
-  '/static/js/bundle.js',
-  '/static/css/main.css',
+  '/index.html',
   '/manifest.json'
 ]
 
@@ -19,7 +18,8 @@ const API_CACHE_URLS = [
   '/api/warehouses'
 ]
 
-const API_BASE_URL = 'https://p9hwiqc5jvqq.manus.space'
+// Use the same origin as the frontend when online
+const API_BASE_URL = self.location.origin
 
 // Install event - cache static assets
 self.addEventListener('install', (event) => {
