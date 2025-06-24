@@ -41,3 +41,12 @@ npm run build
 - `public/` – static assets and service worker
 - `app.py` – Flask API entry point
 
+## Running Tests
+
+Lint the project and run unit tests with coverage:
+
+```bash
+npm run lint
+npm run test:unit
+```
+
