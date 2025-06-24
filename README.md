@@ -23,7 +23,7 @@ The API will start on `http://localhost:5000`.
 Install Node dependencies and start the dev server:
 
 ```bash
-npm install
+npm ci
 npm run dev
 ```
 
@@ -34,6 +34,16 @@ Build a production bundle with:
 ```bash
 npm run build
 ```
+
+## Docker Setup
+
+To run the entire stack using Docker:
+
+```bash
+make up
+```
+
+The frontend will be available at `http://localhost:3000` and the backend API at `http://localhost:5000`.
 
 ## Project Structure
 

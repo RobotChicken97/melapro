@@ -9,10 +9,11 @@
 ## 0. TL;DR for Agents
 1. Read this file start-to-finish **before** generating code.  
 2. Keep code inside its domain folder (see §2).  
-3. Code must pass `npm run lint && npm run test:unit` with zero warnings.  
-4. Use Conventional Commit messages (`feat:`, `fix:`, `chore:`, etc.).  
-5. Never edit `/infra/db/migrations/*` unless task explicitly says so.  
-6. Prefer small PRs (< 300 LOC changed) with screenshot/test evidence.
+3. Code must pass `npm run lint && npm run test:unit` with zero warnings.
+4. A task isn't complete unless these checks succeed.
+5. Use Conventional Commit messages (`feat:`, `fix:`, `chore:`, etc.).
+6. Never edit `/infra/db/migrations/*` unless task explicitly says so.
+7. Prefer small PRs (< 300 LOC changed) with screenshot/test evidence.
 
 ---
 
