@@ -51,7 +51,7 @@ export function Sidebar({ open, setOpen, currentUser }) {
           <div className="flex items-center justify-between h-16 px-6 border-b border-gray-200">
             <div className="flex items-center space-x-2">
               <Store className="h-8 w-8 text-blue-600" />
-              <span className="text-xl font-bold text-gray-900">InventoryPro</span>
+              <span className="text-xl font-bold text-gray-900">Melapro</span>
             </div>
             <Button
               variant="ghost"
@@ -111,7 +111,7 @@ export function Sidebar({ open, setOpen, currentUser }) {
           {/* Footer */}
           <div className="px-6 py-4 border-t border-gray-200">
             <p className="text-xs text-gray-500 text-center">
-              Inventory Management System v1.0
+              Melapro Inventory System v1.0
             </p>
           </div>
         </div>
