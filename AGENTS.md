@@ -91,6 +91,7 @@
   `feat(inventory): add batch tracking #42`  
 - Link issues; include screenshots/GIFs + test output in PR description.  
 - Use the template in `.github/pull_request_template.md`.
+- Update `CHANGELOG.md` with a short summary of your changes.
 
 ---
 

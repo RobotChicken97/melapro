@@ -25,13 +25,14 @@ module.exports = {
     'no-await-in-loop': 'off',
     'no-restricted-syntax': 'off',
     'import/prefer-default-export': 'off',
+    'import/extensions': 'off',
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
     'no-unused-vars': 'off',
     'class-methods-use-this': 'off',
   },
   overrides: [
     {
-      files: ['vite.config.js'],
+      files: ['vite.config.js', 'vitest.config.js'],
       rules: {
         'import/no-extraneous-dependencies': 'off',
       },
