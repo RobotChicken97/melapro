@@ -119,7 +119,7 @@ def init_db():
 def health_check():
     return jsonify({
         'success': True,
-        'message': 'Inventory System API is running',
+        'message': 'Melapro API is running',
         'timestamp': datetime.now().isoformat()
     })
 

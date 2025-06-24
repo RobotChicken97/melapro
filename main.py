@@ -173,7 +173,7 @@ def health_check():
         return jsonify({
             'status': 'healthy',
             'database': db_status,
-            'message': 'Inventory System API is running'
+            'message': 'Melapro API is running'
         })
     except Exception as e:
         return jsonify({
@@ -186,7 +186,7 @@ def health_check():
 def api_info():
     """API information endpoint"""
     return jsonify({
-        'name': 'Inventory System API',
+        'name': 'Melapro API',
         'version': '1.0.0',
         'description': 'Offline-first inventory management system for small retail businesses',
         'endpoints': {
@@ -215,7 +215,7 @@ def serve(path):
             return send_from_directory(static_folder_path, 'index.html')
         else:
             return jsonify({
-                'message': 'Inventory System API',
+                'message': 'Melapro API',
                 'version': '1.0.0',
                 'api_docs': '/api'
             })

@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react'
-import offlineService from '../services/offlineService'
+import offlineService from './offlineService'
 
 export function useOffline() {
   const [isOnline, setIsOnline] = useState(navigator.onLine)

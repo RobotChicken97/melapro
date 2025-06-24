@@ -1,6 +1,6 @@
-// Service Worker for Offline-First Inventory System
-const CACHE_NAME = 'inventory-system-v1'
-const API_CACHE_NAME = 'inventory-api-v1'
+// Service Worker for Melapro Inventory System
+const CACHE_NAME = 'melapro-v1'
+const API_CACHE_NAME = 'melapro-api-v1'
 
 // Files to cache for offline use
 const STATIC_CACHE_URLS = [
@@ -271,7 +271,7 @@ function notifyClients(type, data) {
 // Open IndexedDB for storing pending requests
 function openDB() {
   return new Promise((resolve, reject) => {
-    const request = indexedDB.open('InventorySystemDB', 1)
+    const request = indexedDB.open('MelaproDB', 1)
     
     request.onerror = () => reject(request.error)
     request.onsuccess = () => resolve(request.result)
