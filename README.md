@@ -23,7 +23,7 @@ The API will start on `http://localhost:5000`.
 Install Node dependencies and start the dev server:
 
 ```bash
-npm install
+npm ci
 npm run dev
 ```
 
