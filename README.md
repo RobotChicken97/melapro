@@ -35,6 +35,16 @@ Build a production bundle with:
 npm run build
 ```
 
+## Docker Setup
+
+To run the entire stack using Docker:
+
+```bash
+make up
+```
+
+The frontend will be available at `http://localhost:3000` and the backend API at `http://localhost:5000`.
+
 ## Project Structure
 
 - `src/` – React source code
