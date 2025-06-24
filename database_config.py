@@ -51,7 +51,7 @@ class CouchDBConfig:
         return db
     
     def create_indexes(self, db_name: str):
-        """Create necessary indexes for the inventory system"""
+        """Create necessary indexes for the Melapro inventory system"""
         db = self.get_database(db_name)
         if not db:
             return False

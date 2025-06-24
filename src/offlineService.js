@@ -50,7 +50,7 @@ class OfflineService {
   // Initialize IndexedDB for offline storage
   async initDB() {
     return new Promise((resolve, reject) => {
-      const request = indexedDB.open('InventorySystemDB', 1)
+      const request = indexedDB.open('MelaproDB', 1)
       
       request.onerror = () => reject(request.error)
       request.onsuccess = () => {

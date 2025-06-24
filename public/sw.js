@@ -271,7 +271,7 @@ function notifyClients(type, data) {
 // Open IndexedDB for storing pending requests
 function openDB() {
   return new Promise((resolve, reject) => {
-    const request = indexedDB.open('InventorySystemDB', 1)
+    const request = indexedDB.open('MelaproDB', 1)
     
     request.onerror = () => reject(request.error)
     request.onsuccess = () => resolve(request.result)
