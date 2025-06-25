@@ -12,3 +12,4 @@ All notable changes to this project will be documented in this file.
 - Fixed Makefile indentation to avoid errors when running `make`.
 
 - Fixed CSS build error by removing invalid tailwind import and adding @eslint/eslintrc dev dependency.
+- Fixed Docker build error by installing dev dependencies for frontend image.
