@@ -109,10 +109,10 @@
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    /* removed invalid Tailwind class */
   }
   body {
-    @apply bg-background text-foreground;
+    /* bg-background text-foreground removed due to missing theme classes */
   }
 }
 @tailwind base;
