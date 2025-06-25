@@ -12,5 +12,5 @@ const compat = new FlatCompat({
 
 export default [
   ...compat.config(cjsConfig),
-  { ignores: ['node_modules', 'public'] },
+  { ignores: ['node_modules', 'public', 'dist'] },
 ];
